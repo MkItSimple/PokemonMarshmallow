@@ -10,4 +10,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
+
+//    private val pokemonListFragment = PokemonListFragment()
+//
+//    override fun initUI() {
+//        //  viewModel = ViewModelProviders.of(this, viewModelFactory)[PokeMonListViewModel::class.java]
+//        supportFragmentManager.beginTransaction().add(R.id.container, pokemonListFragment).commit()
+//    }
 }
