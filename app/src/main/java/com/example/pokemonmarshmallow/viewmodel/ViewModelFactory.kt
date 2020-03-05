@@ -1,3 +1,5 @@
+@file:Suppress("UNCHECKED_CAST")
+
 package com.example.pokemonmarshmallow.viewmodel
 
 import androidx.lifecycle.ViewModel

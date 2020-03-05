@@ -1,20 +1,20 @@
 package com.example.pokemonmarshmallow.ui
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
+import android.app.Dialog
 import com.example.pokemonmarshmallow.R
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-    }
-
-//    private val pokemonListFragment = PokemonListFragment()
-//
-//    override fun initUI() {
-//        //  viewModel = ViewModelProviders.of(this, viewModelFactory)[PokeMonListViewModel::class.java]
-//        supportFragmentManager.beginTransaction().add(R.id.container, pokemonListFragment).commit()
+//    override fun onCreate(savedInstanceState: Bundle?) {
+//        super.onCreate(savedInstanceState)
+//        setContentView(R.layout.activity_main)
 //    }
+
+
+   override fun getLayoutById() = R.layout.activity_main
+    private val pokemonListFragment = PokemonListFragment()
+
+    override fun initUI() {
+        supportFragmentManager.beginTransaction().add(R.id.container, pokemonListFragment).commit()
+    }
 }

@@ -4,6 +4,8 @@ import android.app.Application
 import com.example.pokemonmarshmallow.di.component.AppComponent
 import com.example.pokemonmarshmallow.di.component.DaggerAppComponent
 import com.example.pokemonmarshmallow.di.module.NetworkModule
+import com.example.pokemonmarshmallow.di.module.PokemonUsecaseModule
+import com.example.pokemonmarshmallow.di.module.RepositoryModule
 
 class BaseApp : Application() {
     lateinit var appComponent: AppComponent
@@ -14,8 +16,8 @@ class BaseApp : Application() {
     }
 
     private fun initDagger() = DaggerAppComponent.builder()
-//        .networkModule(NetworkModule())
-//        .repositoryModule(RepositoryModule())
-//        .pokemonUsecaseModule(PokemonUsecaseModule())
+        .networkModule(NetworkModule())
+        .repositoryModule(RepositoryModule())
+        .pokemonUsecaseModule(PokemonUsecaseModule())
         .build()
 }

@@ -1,8 +1,6 @@
 package com.example.pokemonmarshmallow.di.component
 
-import com.example.pokemonmarshmallow.di.module.NetworkModule
-import com.example.pokemonmarshmallow.di.module.PokemonUsecaseModule
-import com.example.pokemonmarshmallow.di.module.RepositoryModule
+import com.example.pokemonmarshmallow.di.module.*
 import com.example.pokemonmarshmallow.di.scope.AppScope
 import com.example.pokemonmarshmallow.di.subcomponent.PokemonDetailsComponent
 import com.example.pokemonmarshmallow.di.subcomponent.PokemonListComponent
