@@ -20,9 +20,5 @@ class PokeMonListViewModel @Inject constructor(private val usecase: PokemonUseca
         compositeDisposable.add(disposable)
     }
 
-
-
     fun getLivePokemonList() = pokemonListMutableLiveData
-
-
 }

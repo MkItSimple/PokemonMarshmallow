@@ -10,6 +10,4 @@ abstract  class BaseActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(getLayoutById())
     }
-
-    abstract fun initUI()
 }

@@ -16,5 +16,4 @@ abstract class BaseFragment : Fragment() {
     }
 
     abstract fun getLayoutById(): Int
-
 }

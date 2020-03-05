@@ -1,20 +1,19 @@
 package com.example.pokemonmarshmallow.ui
 
-import android.app.Dialog
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.example.pokemonmarshmallow.R
 
-class MainActivity : BaseActivity() {
+class MainActivity : AppCompatActivity() {
 
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//        setContentView(R.layout.activity_main)
-//    }
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
 
+        initUI()
+    }
 
-   override fun getLayoutById() = R.layout.activity_main
-    private val pokemonListFragment = PokemonListFragment()
-
-    override fun initUI() {
-        supportFragmentManager.beginTransaction().add(R.id.container, pokemonListFragment).commit()
+    fun initUI() {
+        supportFragmentManager.beginTransaction().add(R.id.container, PokemonListFragment()).commit()
     }
 }

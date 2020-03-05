@@ -37,7 +37,7 @@ class PokemonListAdapter : RecyclerView.Adapter<PokemonListAdapter.PokemonViewHo
         notifyDataSetChanged()
     }
 
-    fun setClickListener(listener: OnClickListener){
+    fun setClickListener(listener: PokemonListFragment){
         this.listener = listener
     }
 
